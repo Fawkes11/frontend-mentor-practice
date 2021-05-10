@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-box{
+    height: 245px;
+    position: absolute;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 0 0 4% 4%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: background 0.2s linear;
+}
+header{
+    margin: 10px 0 25px 0;
+}
+body{
+    background-color: hsl(0, 0%, 100%);
+    transition: background 0.2s linear;
+}
+
+/*START CHECKBOX */
+ .checkbox{
+    opacity: 0;
+    position: absolute;
+} 
+
+.label-check{
+    position: relative;
+    display: flex;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    background: hsl(230, 22%, 74%);
+}
+body.dark{
+    background-color: hsl(230, 17%, 14%);
+}
+.dark .label-check{
+    background: linear-gradient(90deg,hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%)100%);
+}
+.dark .background-box{
+    background-color: hsl(232, 19%, 15%);
+}
+.dark #social-red{
+    background-color: hsl(228, 28%, 20%);
+}
+.dark .overview-box{
+    background-color: hsl(228, 28%, 20%);
+}
+.dark .change-color{
+    color: hsl(0, 0%, 100%);
+}
+.dark .graytext-color{
+    color: hsl(228, 34%, 66%);
+}
+.ball{
+    background: #fff;
+    position: absolute;
+    top: 2px;
+    left: 26px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+    
+}
+.checkbox:checked + .label-check .ball{
+    background: #111;
+    transform: translateX(-24px);
+}
+
+
+#social-red{
+    position: relative;
+    height: 215px;
+    min-width: 200px;
+    border-radius: 8px;
+    background-color: hsl(227, 47%, 96%);
+
+}
+.fb::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: hsl(208, 92%, 53%);
+}
+.tw::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: hsl(203, 89%, 53%);
+}
+.in::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: linear-gradient(90deg,hsl(37, 97%, 70%) 0%, hsl(329, 70%, 58%)100%);
+
+}
+.yt::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: hsl(348, 97%, 39%);
+}
+.overview-box{
+    position: relative;
+    max-height: 130px;
+    min-width: 192px;
+    border-radius: 8px;
+    background-color: hsl(227, 47%, 96%);
+}
+.graytext-color{
+    color: hsl(228, 12%, 44%);
+}
+.green-text{
+    color: hsl(163, 72%, 41%);
+    font-weight: 700;
+}
+.red-text{
+    color: hsl(356, 69%, 56%);
+    font-weight: 700;
+}
+.line{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 1px;
+    width: 350px;
+    top: 110px;
+    background: hsl(228, 12%, 44%);
+    display: none;
+}
+.socialmedia{
+    min-width: 360px;
+}
+.darkmode{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+@media (max-width: 375px) {
+    .line{display:inline;}
+    .darkmode{display: flex; justify-content: space-between;}
+
+  }
+
