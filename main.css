@@ -47,7 +47,7 @@ body.dark{
 .dark .background-box{
     background-color: hsl(232, 19%, 15%);
 }
-.dark #social-red{
+.dark .social-red{
     background-color: hsl(228, 28%, 20%);
 }
 .dark .overview-box{
@@ -76,7 +76,7 @@ body.dark{
 }
 
 
-#social-red{
+.social-red{
     position: relative;
     height: 215px;
     min-width: 200px;
@@ -170,4 +170,3 @@ body.dark{
     .darkmode{display: flex; justify-content: space-between;}
 
   }
-
